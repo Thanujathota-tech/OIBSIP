@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.root
+{
+  --text:3rem;
+}
+.main-section
+{
+    min-height: 100vh;
+    background: url("https://images.unsplash.com/photo-1590520694457-4a5308a424d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: slide 1s ease-in-out;
+    
+}
+.navbar 
+{
+    display:flex;
+    justify-content: space-between;
+    height: 15vh;
+    padding: 1rem 1.5rem;
+    color: green;
+    animation:movedown 850ms ease-in 1s forwards;
+ 
+}
+@keyframes movedown
+{
+    from {
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+
+
+.navbar ul
+{
+    list-style: none;
+}
+.navbar ul li
+{
+    display: inline-block;
+    margin-left: 3rem;
+    font-size: var(--text);
+    border-radius: 22%;
+    background-position: 23%;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+}
+.navbar ul li a:hover{
+    border-bottom: 2px solid white;
+}
+.main-text
+{
+    color:white;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes slide
+{
+    from {
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+
+}
+
+.main-text a
+{
+    color:white;
+    background-color: #2ecc71;
+    font-weight:800;
+    border-radius: 10px;
+    text-decoration: none;
+    padding:0.7rem 1.1rem; 
+    margin: o.8 auto;
+    display: block;
+    transition: opacity 280ms linear;
+}
+.main-text a:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+.main-text h2
+{
+    font-size:2rem;
+    color:white;
+}
+.main-text p{
+    font-size:1.5rem;
+    
+}
+    
+

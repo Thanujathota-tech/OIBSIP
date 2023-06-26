@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.max-width{
+    max-width :1550px;
+    padding:0 80px;
+    margin:auto;
+}
+.navbar{
+    position: fixed;
+    width:100%;
+    padding:20px 0;
+    background:transparent;
+    font-family: 'ubuntu',sans-serif;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color:#fff;
+    font-display: 2px;
+    font-size:35px;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color:rgb(59, 204, 206);
+}
+.navbar .menu li{
+    list-style: none;
+    display:inline-block;
+}
+.navbar .menu li a{
+    color:#fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 3s ease;
+}
+.navbar .menu li a:hover{
+    color:blue;
+}
+/*home section*/
+.home{
+    display: flex;
+    background: url('https://www.asiapacific.ca/sites/default/files/styles/apf_social/public/keystone_55.png?itok=6bNh3RUO')no-repeat;
+    height: 100vh;
+    background-size: cover;
+    color:#fff;
+    min-height: 500px;
+    font-family: 'ubuntu',sans-serif;
+}
+.home .max-width{
+    margin:auto 0 auto 50px;
+}
+.home-content .text-1{
+    font-size:27px;
+    margin-top: -10%;
+    
+}
+ .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+    margin: center;
+}
+.home-content .text-3{
+    font-size: 40px;
+    margin:5px 0;
+    margin: center;
+}
+.home-content .text-3 span
+{
+    color: rgb(59, 204, 206);
+    font-weight: 500;
+    margin: center;
+
+}
+@keyframes slideInRight{
+    from{
+        transform: translatex(-300px);
+    }
+    to{
+        transform: translatex(0);
+    }
+}
+.text-3{
+    animation-name: slideInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    transform: translate(-150px);
+}
+/*--------------------------about--------------------*/
+#about{
+
+    color:rgb(96, 96, 208);
+    background:url('https://wallpaperset.com/w/full/e/9/8/31136.jpg');
+    background-size: contain;
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-col-1{
+    flex-basis: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+}
+.about-col-1 img{
+    margin-top: 30%;
+    margin-left: 100px;
+    margin-right: 50px;
+    display: block;
+    border-radius: 30px;
+    width: 500px;
+    height: 500px;
+    
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    margin-top: 15%;
+    font-size: 60px;
+    font-weight: 650;
+    color:rgb(245, 249, 250);
+}
+.sub-title2{
+    font-size: 19px;
+    font-weight: 350;
+    letter-spacing: 0.5px;
+    list-style:none;
+    line-height: 1.8;   
+}
+.tab-titles{
+    display: flex;
+    margin:20px 0 40px;
+    color:rgb(157, 98, 98);
+    
+}
+.tab-links{
+    margin-right: 100px;
+    font-size: 25px;
+    font-weight: 500;
+    cursor:pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height:3px;
+    background:blue;
+    position: absolute;
+    left:0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents{
+    font-size: 18px;
+    font-weight: 350;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 8px 0;
+}
+.tab-contents ul li span{
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+    color:rgb(157, 98, 98);
+    
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display:block;
+}
+/*--------My Services------------*/
+#services{
+    box-sizing: border-box;
+    color: #fff;
+}
+.sub-title3{
+
+    font-size: 60px;
+    margin-left: 38%;
+    font-weight: 700;
+    margin-top: 25%;
+    
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px , 1fr));
+    grid-gap: 50px;
+    margin-top: 8%;
+    margin-bottom: 30%;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+.services-list div{
+    background:#1a4545;
+    padding: 50px;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 15px;
+    transition:background 0.5s,transform 0.5s;
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color:#ffff;
+    font-size: 18px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover
+{
+    background: rgb(60, 170, 209);
+    transform: translate(-10px);
+}
+
+/*----------mywork-----------------*/
+  #work{
+    box-sizing: border-box;
+    color:white;
+  }
+.sub-title4{
+    margin-left: 650px;
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: -12%;
+    color: #fff;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top: 80px;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+.work{
+    border-radius:10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 85%;
+    height: 60vh;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 89.5%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),rgb(72, 158, 189));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.6s;
+    color: #fff;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: rgb(59, 179, 201);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    margin-top: 60px;
+    width:fit-content;
+    border:1px solid rgb(99, 169, 204);
+    padding: 14px 50px;
+    border-radius: 6px;
+    font-size: 20px;
+    color:blue;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: rgb(17, 167, 221);
+    transition-duration: 1s;
+    animation-duration: 2s;
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+/*-------------contact-------------*/
+#contact{
+margin-top: 130px;
+color: white;
+
+}
+.contact-left{
+    font-size: 20px;
+    flex-basis: 35%;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-bottom: -5%;
+}
+.contact-right{
+    margin-bottom: 5%;
+    flex-basis: 70%;
+    margin-left: 0;
+    margin-right: 12%;
+    
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: rgb(14, 59, 128);
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+
+}
+.social-icons a{
+    text-decoration: none;
+    font-size:30px;
+    margin-right: 15px;
+    color:rgb(33, 45, 48);
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color:rgb(0, 145, 255);
+    transform: translate(-5px);
+}
+.btn.btn2{
+    background:rgb(15, 118, 116);
+    color: #fff;
+    display: inline-block;
+}
+.contact-right form{
+    width: 100%;
+    margin-top: 130px;
+
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: rgb(28, 90, 99);
+    padding:15px;
+    margin:15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background: rgb(28, 90, 99);
+    font-weight: 300;
+    margin-top: 20px;
+}
+#msg{
+    color:whitesmoke;
+    margin-top: -40px;
+    display: block;
+}

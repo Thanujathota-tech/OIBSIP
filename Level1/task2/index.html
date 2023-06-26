@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/12b83aec10.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Thanu <span>techfo!</span></a></div>
+            <ul class="menu">
+                <li><a href="#section">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+    <section class="home" id="section">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello,I'm</div>
+                <div class="text-2">Thanuja Thota</div>
+                <div class="text-3"> a skilled <strong><span>Web Developer</span></strong></div>
+            </div>
+        </div>
+    </section>
+   <!--about section-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="https://media.istockphoto.com/id/165856154/photo/business-woman-with-arms-crossed.jpg?s=612x612&w=0&k=20&c=LPMa47BfXnAigIrJwjzH5tYZ_2fuyO52EKLmbBG6GnM=" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="sub-title2"><br>I'm Thanuja Thota, a well qualified and certified Web Developer. With 2 years of Experience<br> 
+                        in Web developing and having a full-fledged knowledge about the very popular programming <br>languages like java and python.As I am 
+                        certified in many trust worthy platforms like Codeaca,<br>Internshala and APLMS,APSSDC.I have completed successfully my 
+                        graduation in the stream of <br>Artificial Intelligence currently working as a Freelancer to develop many more websites.
+                     </p>
+                 <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                 </div>
+                 <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>programming languages</span><br>python, java, javascript, react</li>
+                        <li><span>Database Design</span><br>Database sql, MySQL, MS Access</li>
+                    </ul>
+                 </div>
+                 <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>2023-current</span><br>processing Web app development training at Mumbai</li>
+                        <li><span>2021-2023</span><br>worked as a skilled frontend developer at Starlite tech</li>
+                        <li><span>2019-2021</span><br>worked as a Data Analyst at myprogrammers,Delhi</li>
+                        <li><span>2018-2019</span><br>completed internship at various trusted websites like Internshala</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2018</span><br>Masters in Computer science at MIT</li>
+                        <li><span>2016</span><br>Bacherlors in Computer science-Artificial Intelligence at JNTUH</li>
+                        <li><span>2014</span><br>studied about Managerial Economics & Financial Accountancy</li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+    <!---my services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title3">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web designing is the process of planning, conceptualizing, and implementing the plan for designing a website in 
+                        a way that is functional and offers a good user experience. User experience is central to the web designing
+                         process. Websites have an array of elements presented in ways that make them easy to navigate. Web designing 
+                         essentially involves working on every attribute of the website that people interact with, so that the website
+                         is simple and efficient, allows users to quickly find the information they need, and looks visually pleasing. 
+                        All these factors, when combined, decide how well the website is designed.</p>
+                         <a href="#" class="learn">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python , Java Programming</h2>
+                    <p>Python is a computer programming language often used to build websites and software, automate tasks, and conduct data 
+                        analysis.Python is a general-purpose language, meaning it can be used to create a variety of different programs and isn't 
+                        specialized for any specific problems.Java is a multi-platform, object-oriented, and network-centric language
+                         that can be used as a platform in itself. It is a fast, secure, reliable programming language for coding 
+                         everything from mobile apps and enterprise software to big data applications and server-side technologies.</p>
+                         <a href="#" class="learn">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database Design</h2>
+                    <p>Database design is the organization of data according to a database model. The designer determines what data 
+                        must be stored and how the data elements interrelate. With this information, they can begin to fit the data
+                         to the database model. A database management system manages the data accordingly.Database design can be 
+                         generally defined as a collection of tasks or processes that enhance the designing, development, implementation,
+                          and maintenance of enterprise data management system.</p>
+                         <a href="#" class="learn">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------my work------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title4">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="https://cdn.vox-cdn.com/thumbor/0y-hgt1CM7-S3E8JWNAEH0FKjHE=/0x0:2000x1333/768x768/filters:focal(1000x667:1001x668)/cdn.vox-cdn.com/uploads/chorus_asset/file/24453464/DSC04352_processed.jpg" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://onepagelove.imgix.net/2020/01/opl-master-20.jpg?w=540&max-h=540&fit=crop&fp-y=0&auto=compress" alt="">
+                    <div class="layer">
+                        <h3>personal portfolio App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-942181662-1568153666.jpg?crop=0.667xw:1.00xh;0.0682xw,0&resize=1200:*" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-----------------Contact----------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title5">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>contact@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>1234567890</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea type="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>                 
+                </div>
+            </div>
+            <div class="copyright">
+                <p>copyright @ Thanuja Thota. Made by using html,css</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents= document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxlcapKWUXPEXXRzgdT8pj8CH5xgwElc6N328FxCi1A1azlJnyK5yC6KgEmhDLXAujl/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML="Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
